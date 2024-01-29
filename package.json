@@ -13,6 +13,12 @@
     "precommit": "lint-staged",
     "preview": "vite preview"
   },
+  "lint-staged": {
+    "*.{ts,tsx}": [
+      "npm run lint",
+      "npm run format:staged"
+    ]
+  },
   "dependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
