@@ -11,7 +11,8 @@ e.g. branch: feat/featureBranch, commit: feat: added feature...
 - Each component should reside in its own folder within the main "components" folder.
 - The folder name should correspond to the component's name. For example: /components/Header.
 - Place component-related files inside the component folder, such as Header.tsx, Header.module.scss.
-  /src is divided by sections where we put different type of things:
+  
+/src is divided by sections where we put different type of things:
 - app -> here we serve page files responsible for serving page under specific url e.g. ./home/page.tsx (in it e.g. Header Main Footer tags ),
 - assets -> here we store imgs, icons etc.,
 - backend -> here we store serializers of data from and to backend. e.g. format created account to db model. (and other backend related stuff),
