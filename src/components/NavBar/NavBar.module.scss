@@ -1,0 +1,162 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+@import '../../styles/variables';
+
+.nav {
+  background-color: $backgroundColor;
+  width: 100%;
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  -webkit-box-shadow: $navBoxShadow;
+          box-shadow: $navBoxShadow;
+}
+
+.navContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+}
+
+.logoBox {
+  width: 80px;
+  height: 100%;
+  margin: 0 calc(5 * $defaultSpacing) 0 calc(5 * $defaultSpacing);
+  z-index: 102;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+
+  a {
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+
+  img {
+    height: 50%;
+    width: auto;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+}
+
+ol {
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+ol a {
+  color: $altTextColor;
+  text-decoration: none;
+}
+
+ol li {
+  padding: calc($defaultSpacing / 2) calc($defaultSpacing * 1.5);
+  margin: 0 calc($defaultSpacing / 2);
+  font-size: calc($grade30Font - 1px);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  position: relative;
+
+  &:after {
+    position: absolute;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+    content: "";
+    width: 0;
+    left: 50%;
+    bottom: 0;
+    height: 3px;
+    background: #60a3ab;
+  }
+
+  &:hover:after {
+    width: 100%;
+    left: 0;
+  }
+
+  i {
+    font-size: calc($grade30Font + 1px);
+    margin: 0 calc($defaultSpacing / 2);
+  }
+}
+
+.buttonsBox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.logInButton,
+.signUpButton {
+  padding: calc($defaultSpacing / 2) calc($defaultSpacing * 3);
+  font-size: calc($grade30Font - 1px);
+  border-radius: calc($defaultBorderRadius / 2);
+  -webkit-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.logInButton {
+  background-color: $backgroundColor;
+  color: $altTextColor;
+  border: $defaultBorderWidth solid $secondaryColor;
+  margin: 0 $defaultSpacing * 2 0 0;
+
+  &:hover {
+    background-color: $secondaryColor;
+    color: $specialTextColor;
+  }
+}
+
+.signUpButton {
+  background-color: $secondaryColor;
+  color: $specialTextColor;
+  margin: 0 $defaultSpacing * 5 0 0;
+  border: $defaultBorderWidth solid $secondaryColor;
+
+  &:hover {
+    background-color: $backgroundColor;
+    color: $altTextColor;
+  }
+}
+
+#chk {
+  position: absolute;
+  visibility: hidden;
+  z-index: -1111;
+}
