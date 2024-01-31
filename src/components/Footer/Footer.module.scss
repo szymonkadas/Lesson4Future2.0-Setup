@@ -1,0 +1,114 @@
+@import '../../styles/variables';
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 100px;
+  background-color: $altTextColor;
+  color: $specialTextColor;
+
+
+  a {
+    color: $specialTextColor;
+  }
+
+  .container {
+    width: 100%;
+    display: flex;
+    padding: calc($defaultSpacing * 5) 0;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .boxLogo,
+  .logoBox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+  }
+
+  .logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    gap: calc($defaultSpacing * 2);
+
+    img {
+      height: 100%;
+    }
+
+    a {
+      transition: 0.2s;
+      height: 100%;
+
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
+  }
+
+  .logoBox .nbp {
+    display: flex;
+    align-items: center;
+    border-radius: calc($defaultBorderRadius * 2);
+
+    img {
+      height: 60px;
+    }
+
+    p {
+      text-align: left;
+      font-size: $grade25Font;
+    }
+  }
+
+  .sm {
+    display: flex;
+    justify-content: center;
+    margin: calc($defaultSpacing * 2) 0;
+
+    i {
+      font-size: $grade45Font;
+      margin: $defaultSpacing;
+      transition: 0.2s;
+
+      &:hover {
+        transform: scale(1.1);
+        color: $primaryColor;
+      }
+    }
+  }
+
+  .boxMenu ul {
+    list-style-type: none;
+    display: flex;
+    margin: $defaultSpacing calc($defaultSpacing * 4) 0 calc($defaultSpacing * 4);
+    justify-content: center;
+    flex-wrap: wrap;
+
+    li {
+      padding: calc($defaultSpacing / 2) $defaultSpacing;
+      transition: 0.2s;
+
+      &:hover {
+        transform: scale(1.1);
+        color: $primaryColor;
+      }
+    }
+  }
+
+  .foot {
+    display: flex;
+    justify-content: space-around;
+    padding: $defaultSpacing 0;
+    font-size: calc($grade25Font - 1px);
+    flex-wrap: wrap-reverse;
+
+    span {
+      margin: $defaultBorderWidth calc($defaultSpacing * 2);
+    }
+  }
+}
