@@ -8,7 +8,6 @@ const Footer: React.FC = () => {
         <div className={styles.boxLogo}>
           <div className={styles.logoBox}>
             <div className={styles.logo}>
-              {/* Link poprawić */}
               <a href="">
                 <img
                   src="src/assets/img/Sygnet-biale-SVG.svg"
@@ -57,8 +56,10 @@ const Footer: React.FC = () => {
         </div>
         <div className={styles.boxMenu}>
           <ul>
-            {/* Poprawić linki do podstron */}
-            <a href="http://lesson4future.com">
+            <a
+              href="http://lesson4future.com"
+              aria-label="Lesson4Future homepage"
+            >
               <li>Start</li>
             </a>
             {/* <a href=""><li>Nauczyciel</li></a> */}
