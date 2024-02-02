@@ -1,0 +1,175 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+@import '../../styles/variables';
+
+.footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  margin-top: 100px;
+  background-color: $altTextColor;
+  color: $specialTextColor;
+
+  a {
+    color: $specialTextColor;
+  }
+
+  .container {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: calc($defaultSpacing * 5) 0;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .boxLogo,
+  .logoBox {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 300px;
+  }
+
+  .logo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    height: 50px;
+    gap: calc($defaultSpacing * 2);
+
+    img {
+      height: 100%;
+      margin: 0 25px;
+    }
+
+    a {
+      -webkit-transition: 0.2s;
+      -o-transition: 0.2s;
+      transition: 0.2s;
+      height: 100%;
+
+      &:hover {
+        -webkit-transform: scale(1.1);
+            -ms-transform: scale(1.1);
+                transform: scale(1.1);
+      }
+    }
+  }
+
+  .logoBox .nbp {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    border-radius: calc($defaultBorderRadius * 2);
+
+    img {
+      height: 60px;
+    }
+
+    p {
+      text-align: left;
+      font-size: $grade25Font;
+    }
+  }
+
+  .sm {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: calc($defaultSpacing * 2) 0;
+
+    i {
+      font-size: $grade45Font;
+      margin: $defaultSpacing;
+      -webkit-transition: 0.2s;
+      -o-transition: 0.2s;
+      transition: 0.2s;
+
+      &:hover {
+        -webkit-transform: scale(1.1);
+            -ms-transform: scale(1.1);
+                transform: scale(1.1);
+        color: $primaryColor;
+      }
+    }
+  }
+
+  .boxMenu ul {
+    list-style-type: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: $defaultSpacing calc($defaultSpacing * 4) 0 calc($defaultSpacing * 4);
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+
+    li {
+      padding: calc($defaultSpacing / 2) $defaultSpacing;
+      -webkit-transition: 0.2s;
+      -o-transition: 0.2s;
+      transition: 0.2s;
+
+      &:hover {
+        -webkit-transform: scale(1.1);
+            -ms-transform: scale(1.1);
+                transform: scale(1.1);
+        color: $primaryColor;
+      }
+    }
+  }
+
+  .foot {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    padding: $defaultSpacing 0;
+    font-size: calc($grade25Font - 1px);
+    -ms-flex-wrap: wrap-reverse;
+        flex-wrap: wrap-reverse;
+
+    span {
+      margin: $defaultBorderWidth calc($defaultSpacing * 2);
+    }
+  }
+}
