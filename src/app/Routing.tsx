@@ -7,6 +7,7 @@ import CreateBusinessplan from "./businessplan/create-businessplan/CreateBusines
 import LoginPage from "./login/LoginPage.tsx";
 import LoginFormPage from "./login/loginForm/LoginFormPage.tsx";
 import NoMatch from "./no-match/NoMatch";
+import ProfilePage from "./profil/ProfilePage.tsx";
 import StartPage from "./start/StartPage.tsx";
 
 const Routing: React.FC = () => {
@@ -24,7 +25,19 @@ const Routing: React.FC = () => {
       <Route path="/register" element={<LoginPage />} />
       <Route path="/register/form" element={<LoginFormPage />} />
       <Route path="/404" element={<NoMatch />} />
-
+      <Route
+        path="/profil"
+        element={
+          <ProfilePage
+            accountType={"student"}
+            name={"Jan"}
+            surname={"Kowalski"}
+            birthDate={"2137"}
+            email={"q@2wp.pl"}
+          />
+        }
+      />
+      {/* to przekazywanie danych będzie trzeba jakoś zmienić pewnie */}
       <Route path="/start" element={<StartPage />} />
       <Route path="/dodatkowe" element={<AdditionalPage />} />
     </Routes>
