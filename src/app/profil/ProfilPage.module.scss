@@ -1,0 +1,67 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+@import "/src/styles/variables";
+@import "/src/styles/pages/layout";
+
+.profileContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-shadow: $boxShadow;
+          box-shadow: $boxShadow;
+  border-radius: $defaultSpacing;
+  padding: calc($defaultSpacing * 2) calc($defaultSpacing * 4) calc($defaultSpacing * 4) calc($defaultSpacing * 4);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  height: auto;
+
+  h1 {
+    font-size: $grade55Font;
+    margin-bottom: $defaultSpacing;
+    text-align: center;
+  }
+
+  h2 {
+    font-size: $grade30Font;
+    margin: calc($defaultSpacing * 1.5) 0 calc($defaultSpacing / 2) 0;
+  }
+
+  .input {
+    width: 274px;
+    border: $defaultBorderWidth solid $primaryColor;
+    border-radius: $defaultSpacing;
+    padding: $defaultSpacing;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    overflow-x: auto;
+    min-height: $grade35Font;
+  }
+
+  .deleteButton {
+    padding: calc($defaultSpacing / 2) calc($defaultSpacing * 3);
+    background-color: #950000;
+    color: $specialTextColor;
+    border-radius: $defaultBorderRadius;
+    font-size: $grade25Font;
+    -webkit-transition: 0.2s;
+    -o-transition: 0.2s;
+    transition: 0.2s;
+    font-weight: bold;
+    margin-top: calc($defaultSpacing * 4);
+    -ms-flex-item-align: end;
+        align-self: flex-end;
+
+    &:hover {
+      background-color: #c30000;
+    }
+  }
+}
