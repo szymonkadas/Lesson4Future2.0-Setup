@@ -1,7 +1,7 @@
 import React from "react";
-import styles from "./ProfilPage.module.scss";
+import styles from "./ProfilePage.module.scss";
 
-interface ProfilProps {
+interface ProfileProps {
   accountType: string;
   name: string;
   surname: string;
@@ -9,7 +9,7 @@ interface ProfilProps {
   email: string;
 }
 
-const ProfilPage: React.FC<ProfilProps> = ({
+const ProfilePage: React.FC<ProfileProps> = ({
   accountType,
   name,
   surname,
@@ -51,4 +51,4 @@ const ProfilPage: React.FC<ProfilProps> = ({
   );
 };
 
-export default ProfilPage;
+export default ProfilePage;
