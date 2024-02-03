@@ -25,7 +25,7 @@ export default function StartPage() {
         />
       </section>
       <h3>Najpopularniejsze mini gry</h3>
-      <section id="mini-games-list">
+      <section id="miniGamesList">
         <div className={styles.containerRows}>
           <Card
             linkPath="/mini-gry/persony"
