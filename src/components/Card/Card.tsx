@@ -14,7 +14,7 @@ const Card: React.FC<CardProps> = ({ imgSrc, title, linkPath, status }) => {
   return (
     <div className={`${styles.card} ${status ? styles.cardWithStatus : ""}`}>
       {status && <TaskStatus status={status}></TaskStatus>}
-      <img src={imgSrc} alt={title + " image"} />
+      <img src={imgSrc} alt="" />
       <div className={styles.contentContainer}>
         <h2>{title}</h2>
         <div className={styles.cardButtonContainer}>
