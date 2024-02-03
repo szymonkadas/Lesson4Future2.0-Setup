@@ -6,7 +6,7 @@ import CreateBusinessplan from "./businessplan/create-businessplan/CreateBusines
 import LoginPage from "./login/LoginPage.tsx";
 import LoginFormPage from "./login/loginForm/LoginFormPage.tsx";
 import NoMatch from "./no-match/NoMatch";
-import ProfilPage from "./profil/ProfilPage.tsx";
+import ProfilePage from "./profil/ProfilePage.tsx";
 
 const Routing: React.FC = () => {
   return (
@@ -26,7 +26,7 @@ const Routing: React.FC = () => {
       <Route
         path="/profil"
         element={
-          <ProfilPage
+          <ProfilePage
             accountType={"student"}
             name={"Jan"}
             surname={"Kowalski"}
