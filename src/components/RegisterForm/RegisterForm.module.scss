@@ -1,0 +1,91 @@
+@import "/src/styles/variables";
+
+.formWrapper {
+  -webkit-box-shadow: $boxShadow;
+  box-shadow: $boxShadow;
+  width: 400px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: calc($defaultSpacing * 2) $defaultSpacing;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-radius: calc($defaultBorderRadius * 2);
+  margin: calc($defaultSpacing * 5) $defaultSpacing calc($defaultSpacing * 10) $defaultSpacing;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: calc($defaultSpacing * 1.5);
+  align-items: center;
+}
+
+.input {
+  border-radius: $defaultSpacing;
+  border: $defaultBorderWidth solid $primaryColor;
+  padding: $defaultSpacing;
+  width: 200px;
+}
+
+.label {
+  display: flex;
+  flex-direction: column;
+  gap: calc($defaultSpacing/2);
+}
+
+.ppBox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  max-width: 220px;
+  margin-top: calc($defaultSpacing * 2);
+}
+
+.ppBox p {
+  font-size: calc($grade25Font - 1px);
+  margin: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin-left: $defaultSpacing;
+  padding: 0;
+}
+.loginButton {
+  padding: 7px calc($defaultSpacing * 4);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: $primaryColor;
+  color: $specialTextColor;
+  border-radius: $defaultBorderRadius;
+  font-weight: bold;
+  -webkit-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s;
+  font-size: $grade30Font;
+  cursor: pointer;
+  border: 0;
+  margin: calc($defaultSpacing * 2) 0 calc($defaultSpacing * 2) 0;
+}
+
+.loginButton:hover {
+  -webkit-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  transform: scale(1.05);
+}
