@@ -1,6 +1,7 @@
 import React from "react";
 import { Route, Routes } from "react-router-dom";
 import App from "./App";
+import AdditionalPage from "./additional/AdditionalPage.tsx";
 import Businessplan from "./businessplan/Businessplan.tsx";
 import CreateBusinessplan from "./businessplan/create-businessplan/CreateBusinessplan";
 import LoginPage from "./login/LoginPage.tsx";
@@ -21,7 +22,9 @@ const Routing: React.FC = () => {
       <Route path="/login" element={<LoginPage />} />
       <Route path="/register" element={<LoginPage />} />
       <Route path="/404" element={<NoMatch />} />
+
       <Route path="/start" element={<StartPage />} />
+      <Route path="/dodatkowe" element={<AdditionalPage />} />
     </Routes>
   );
 };
