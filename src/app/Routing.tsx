@@ -5,6 +5,7 @@ import Businessplan from "./businessplan/Businessplan.tsx";
 import CreateBusinessplan from "./businessplan/create-businessplan/CreateBusinessplan";
 import LoginPage from "./login/LoginPage.tsx";
 import NoMatch from "./no-match/NoMatch";
+import StartPage from "./start/StartPage.tsx";
 
 const Routing: React.FC = () => {
   return (
@@ -20,6 +21,7 @@ const Routing: React.FC = () => {
       <Route path="/login" element={<LoginPage />} />
       <Route path="/register" element={<LoginPage />} />
       <Route path="/404" element={<NoMatch />} />
+      <Route path="/start" element={<StartPage />} />
     </Routes>
   );
 };

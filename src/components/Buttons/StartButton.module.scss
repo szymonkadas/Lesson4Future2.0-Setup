@@ -1,0 +1,31 @@
+@import "/src/styles/variables";
+
+.box {
+    width: 150px;
+    height: 150px;
+    border-radius: $defaultBorderRadius;
+    margin: calc($defaultSpacing * 2) $defaultSpacing;
+    background-color: $primaryColor;
+    color: $specialTextColor;
+    box-sizing: border-box;
+    padding: $defaultSpacing;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    transition: 0.2s;
+
+    &:hover {
+      transform: scale(1.1);
+    }
+
+    i {
+      font-size: $grade60Font;
+      margin: $defaultSpacing 0;
+    }
+
+    h2 {
+      font-size: $grade30Font;
+      text-align: center;
+    }
+  }
