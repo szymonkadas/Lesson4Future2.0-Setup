@@ -1,0 +1,41 @@
+@import "/src/styles/variables";
+@import "/src/styles/pages/layout";
+
+// prolly spacing/margins need adjustment
+  
+h3 {
+    font-size: $grade50Font;
+    margin: $defaultSpacing 0 $defaultSpacing 0;
+}
+
+.moreButton {
+      background-color: $primaryColor;
+      color: $specialTextColor;
+      padding: $defaultSpacing 0;
+      width: 300px;
+      display: flex;
+      justify-content: center;
+      border-radius: calc($defaultBorderRadius / 2);
+      transition: 0.2s;
+  
+      &:hover {
+        background-color: #3d7177;
+      }
+}
+
+.partners {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: calc($defaultSpacing * 5) calc($defaultSpacing * 2) 0 calc($defaultSpacing * 2);
+  
+    h2 {
+      font-size: $grade50Font;
+      margin-bottom: calc($defaultSpacing * 2);
+    }
+  
+    .logo {
+        width: auto;
+        max-height: 50px;
+    }
+}  

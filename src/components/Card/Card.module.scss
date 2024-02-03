@@ -39,6 +39,7 @@
         padding: calc($defaultSpacing / 2) calc($defaultSpacing * 2);
         border-radius: calc($defaultBorderRadius / 2);
         transition: 0.2s;
+        font-size: $grade35Font;
 
         &:hover {
           background-color: $secondaryColor;

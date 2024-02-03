@@ -1,12 +1,14 @@
 import React from "react";
 import { Route, Routes } from "react-router-dom";
 import App from "./App";
+import AdditionalPage from "./additional/AdditionalPage.tsx";
 import Businessplan from "./businessplan/Businessplan.tsx";
 import CreateBusinessplan from "./businessplan/create-businessplan/CreateBusinessplan";
 import LoginPage from "./login/LoginPage.tsx";
 import LoginFormPage from "./login/loginForm/LoginFormPage.tsx";
 import NoMatch from "./no-match/NoMatch";
 import ProfilePage from "./profil/ProfilePage.tsx";
+import StartPage from "./start/StartPage.tsx";
 
 const Routing: React.FC = () => {
   return (
@@ -36,6 +38,8 @@ const Routing: React.FC = () => {
         }
       />
       {/* to przekazywanie danych będzie trzeba jakoś zmienić pewnie */}
+      <Route path="/start" element={<StartPage />} />
+      <Route path="/dodatkowe" element={<AdditionalPage />} />
     </Routes>
   );
 };
