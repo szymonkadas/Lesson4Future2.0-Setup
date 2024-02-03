@@ -9,6 +9,7 @@ const Routing: React.FC = () => {
   return (
     <Routes>
       <Route path="/" element={<App />} />
+      {/* TODO create layout for these 2 pages */}
       <Route path="/businessplan" element={<Businessplan />}>
         {/* TODO: create loader when api will be available */}
       </Route>

@@ -1,6 +1,23 @@
+@import "/src/styles/variables";
+
 .pageWrapper {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
+  width: 100%;
+  gap: $defaultSpacing * 2;
+}
+
+.tileContainer {
+  margin-top: $defaultSpacing * 2;
   width: clamp(600px, 80dvw, 1280px);
+  display: flex;
+  flex-wrap: wrap;
+  gap: $defaultSpacing;
+  justify-content: center;
+}
+
+.heading {
+  font-size: $grade60Font;
 }

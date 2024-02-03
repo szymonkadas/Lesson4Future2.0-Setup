@@ -11,6 +11,7 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 html {
@@ -24,7 +25,7 @@ body {
 }
 
 main {
-  margin-top: $navbarHeight;
+  margin-top: $navbarHeight + $defaultSpacing * 3;
   min-height: 100vh;
 }
 
