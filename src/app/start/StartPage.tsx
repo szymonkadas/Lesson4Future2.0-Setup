@@ -7,7 +7,7 @@ export default function StartPage() {
   return (
     <div className={styles.pageWrapper}>
       <h1 className={styles.heading}>Witaj na Lesson4Future!</h1>
-      <section id="start-menu" className={styles.containerRows}>
+      <section id="startMenu" className={styles.containerRows}>
         <StartButton
           iconClass="fa-solid fa-gamepad"
           text="Zobacz wszystkie mini gry!"
