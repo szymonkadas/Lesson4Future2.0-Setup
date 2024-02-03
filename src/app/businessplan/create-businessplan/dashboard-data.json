@@ -1,0 +1,11 @@
+{
+  "persony": {
+    "status": "DONE"
+  },
+  "komunikacja": {
+    "status": "TODO"
+  },
+  "kreatywne_myslenie": {
+    "status": "IN_PROGRESS"
+  }
+}
