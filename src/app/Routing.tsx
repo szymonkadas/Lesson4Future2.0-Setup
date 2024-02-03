@@ -1,11 +1,13 @@
 import React from "react";
 import { Route, Routes } from "react-router-dom";
 import App from "./App";
+import AdditionalPage from "./additional/AdditionalPage.tsx";
 import Businessplan from "./businessplan/Businessplan.tsx";
 import CreateBusinessplan from "./businessplan/create-businessplan/CreateBusinessplan";
 import LoginPage from "./login/LoginPage.tsx";
 import LoginFormPage from "./login/loginForm/LoginFormPage.tsx";
 import NoMatch from "./no-match/NoMatch";
+import StartPage from "./start/StartPage.tsx";
 
 const Routing: React.FC = () => {
   return (
@@ -22,6 +24,9 @@ const Routing: React.FC = () => {
       <Route path="/register" element={<LoginPage />} />
       <Route path="/register/form" element={<LoginFormPage />} />
       <Route path="/404" element={<NoMatch />} />
+
+      <Route path="/start" element={<StartPage />} />
+      <Route path="/dodatkowe" element={<AdditionalPage />} />
     </Routes>
   );
 };
