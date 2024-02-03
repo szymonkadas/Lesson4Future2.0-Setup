@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import styles from "./NavBar.module.scss";
 
 const NavBar: React.FC = () => {
@@ -28,16 +29,13 @@ const NavBar: React.FC = () => {
       </div>
       <div className={styles.buttonsBox}>
         {/* To do: linki */}
-        <a href="/login">
+        <Link to="/login">
           <div className={styles.logInButton}>Zaloguj się</div>
-        </a>
-        <a href="/register">
+        </Link>
+        <Link to="/register">
           <div className={styles.signUpButton}>Zarejestruj się</div>
-        </a>
+        </Link>
       </div>
-      {/* <input type="checkbox" id="chk" /> */}
-      {/* dlaczego to tu jest? */}
-
       {/* wersja mobilna */}
       {/* <div className={styles.responsiveNav}>
             <button> */}
