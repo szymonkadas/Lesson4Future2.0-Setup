@@ -4,6 +4,7 @@ import App from "./App";
 import Businessplan from "./businessplan/Businessplan.tsx";
 import CreateBusinessplan from "./businessplan/create-businessplan/CreateBusinessplan";
 import LoginPage from "./login/LoginPage.tsx";
+import LoginFormPage from "./login/loginForm/LoginFormPage.tsx";
 import NoMatch from "./no-match/NoMatch";
 
 const Routing: React.FC = () => {
@@ -19,6 +20,7 @@ const Routing: React.FC = () => {
       {/* TODO: implement AUTH, then complete login/register page (it may be redesigned if it would be possible to simplify this schema) */}
       <Route path="/login" element={<LoginPage />} />
       <Route path="/register" element={<LoginPage />} />
+      <Route path="/register/form" element={<LoginFormPage />} />
       <Route path="/404" element={<NoMatch />} />
     </Routes>
   );
