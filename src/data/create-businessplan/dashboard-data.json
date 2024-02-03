@@ -1,0 +1,14 @@
+{
+  "persony": {
+    "status": "DONE"
+  },
+  "komunikacja": {
+    "status": "TODO"
+  },
+  "kreatywne_myslenie": {
+    "status": "ONGOING"
+  },
+  "symulacja_zakladania_spolki": {
+    "status": "TODO"
+  }
+}

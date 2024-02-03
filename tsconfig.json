@@ -5,6 +5,11 @@
     "lib": ["ES2020", "DOM", "DOM.Iterable"],
     "module": "ESNext",
     "skipLibCheck": true,
+    // TOOD make Lesson4Future folder as starting path => / (dunno how to yet -.-)
+    "baseUrl": "/src",
+    "paths": {
+      "*": ["src/*"]
+    },
 
     /* Bundler mode */
     "moduleResolution": "bundler",
