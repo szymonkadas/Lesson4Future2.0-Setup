@@ -5,7 +5,7 @@
 * Browsers: last 4 version
 */
 
-@import '../../styles/variables';
+@import "../../styles/variables";
 
 .nav {
   background-color: $backgroundColor;
@@ -15,20 +15,20 @@
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   position: fixed;
   z-index: 100;
   top: 0;
   -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
   -webkit-box-shadow: $navBoxShadow;
-          box-shadow: $navBoxShadow;
+  box-shadow: $navBoxShadow;
 }
 
 .navContainer {
@@ -36,8 +36,8 @@
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   height: 100%;
 }
 
@@ -50,8 +50,8 @@
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 
   a {
     height: 100%;
@@ -64,8 +64,8 @@
     height: 50%;
     width: auto;
     -ms-flex-item-align: center;
-        -ms-grid-row-align: center;
-        align-self: center;
+    -ms-grid-row-align: center;
+    align-self: center;
   }
 }
 
@@ -86,7 +86,7 @@ ol li {
   margin: 0 calc($defaultSpacing / 2);
   font-size: calc($grade30Font - 1px);
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   position: relative;
 
   &:after {
@@ -128,7 +128,7 @@ ol li {
   -o-transition: 0.2s;
   transition: 0.2s;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 .logInButton {
@@ -152,6 +152,20 @@ ol li {
   &:hover {
     background-color: $backgroundColor;
     color: $altTextColor;
+  }
+}
+.logOutButton {
+  padding: calc($defaultSpacing / 2) calc($defaultSpacing * 3);
+  background-color: $secondaryColor;
+  color: $specialTextColor;
+  margin: 0 calc($defaultSpacing * 5) 0 0;
+  font-size: calc($grade30Font - 1px);
+  border-radius: calc($defaultBorderRadius / 2);
+  -webkit-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s;
+  &:hover {
+    background-color: #60a3ab;
   }
 }
 

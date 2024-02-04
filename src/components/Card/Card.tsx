@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import Button from "../Buttons/Button/Button";
 import styles from "./Card.module.scss";
 import TaskStatus, { TaskStatusEnum } from "./TaskStatus/TaskStatus";
 
@@ -17,15 +17,15 @@ const Card: React.FC<CardProps> = ({ imgSrc, title, linkPath, status }) => {
       <img src={imgSrc} alt="" />
       <div className={styles.contentContainer}>
         <h2>{title}</h2>
-        <div className={styles.cardButtonContainer}>
-          {linkPath ? (
-            <Link to={linkPath} className={styles.button}>
-              Przejdź
-            </Link>
-          ) : (
-            <span>Dostępne wkrótce</span>
-          )}
-        </div>
+        {linkPath ? (
+          <Button
+            to={linkPath}
+            textContent={"Przejdź"}
+            onHoverClass={styles.button}
+          />
+        ) : (
+          "Dostępne wkrótce"
+        )}
       </div>
     </div>
   );

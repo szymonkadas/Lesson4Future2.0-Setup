@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import Button from "../../Buttons/Button/Button";
 import styles from "../NavBar.module.scss";
 
 export default function AuthorisedNavBar() {
@@ -28,9 +29,11 @@ export default function AuthorisedNavBar() {
           </Link>
         </ol>
       </div>
-      <Link to="/wyloguj">
-        <div className={styles.logoutButton}>Wyloguj się</div>
-      </Link>
+      <Button
+        initialStyle={styles.logOutButton}
+        textContent="Wyloguj się"
+        to="/wyloguj"
+      ></Button>
       {/* 
       MOBILE:
       <div className="responsive-nav">

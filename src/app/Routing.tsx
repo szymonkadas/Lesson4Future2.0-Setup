@@ -29,7 +29,7 @@ const Routing: React.FC = () => {
       <Route path="/minigames" element={<MinigamesPage />}></Route>
       <Route path="/404" element={<NoMatch />} />
       <Route
-        path="/profil"
+        path="/profile/student"
         element={
           <ProfilePage
             accountType={"student"}

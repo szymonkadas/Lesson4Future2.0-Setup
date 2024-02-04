@@ -1,0 +1,21 @@
+@import "../../../styles/mixins.scss";
+@import "../../../styles/variables";
+
+.wideButton {
+  background-color: $primaryColor;
+  color: $specialTextColor;
+  padding: $defaultSpacing 0;
+  width: 300px;
+  display: flex;
+  justify-content: center;
+  border-radius: calc($defaultBorderRadius / 2);
+  transition: 0.2s;
+  &:hover {
+    background-color: #3d7177;
+  }
+  font-size: $grade30Font;
+}
+
+.link {
+  @include buttonLink;
+}

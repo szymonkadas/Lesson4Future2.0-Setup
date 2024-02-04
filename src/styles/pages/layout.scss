@@ -1,3 +1,5 @@
+@import "../variables";
+
 .pageWrapper {
   display: flex;
   flex-direction: column;
@@ -5,6 +7,7 @@
   align-items: center;
   width: 100%;
   gap: $defaultSpacing * 2;
+  padding-bottom: $defaultSpacing * 4;
 }
 
 .heading {
@@ -23,4 +26,8 @@
 .containerRows {
   display: flex;
   justify-content: center;
+}
+
+.headingDesc {
+  font-size: $grade35Font;
 }
