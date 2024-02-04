@@ -27,7 +27,7 @@ body {
 
 main {
   margin-top: $navbarHeight + $defaultSpacing * 3;
-  min-height: 100vh;
+  min-height: fit-content;
 }
 
 a {

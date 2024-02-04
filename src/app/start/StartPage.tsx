@@ -1,11 +1,11 @@
-import { Link } from "react-router-dom";
-import StartButton from "../../components/Buttons/StartButton";
+import StartButton from "../../components/Buttons/StartButton/StartButton";
+import WideButton from "../../components/Buttons/WideButton/WideButton";
 import Card from "../../components/Card/Card";
 import styles from "./StartPage.module.scss";
 
 export default function StartPage() {
   return (
-    <div className={styles.pageWrapper}>
+    <div className={`${styles.pageWrapper} ${styles.pagePadding}`}>
       <h1 className={styles.heading}>Witaj na Lesson4Future!</h1>
       <section id="startMenu" className={styles.containerRows}>
         <StartButton
@@ -44,9 +44,7 @@ export default function StartPage() {
           />
         </div>
       </section>
-      <Link to="/mini-gry" className={styles.moreButton}>
-        Zobacz więcej{" "}
-      </Link>
+      <WideButton to={"/minigames"} textContent="Zobacz więcej" />
       <section id="partners" className={styles.partners}>
         <h2>Sponsor narzędzia</h2>
         <img

@@ -6,8 +6,8 @@ const imgPrefix = "/src/assets/img/";
 export default function MinigamesPage() {
   return (
     <div className={styles.pageWrapper}>
-      <h1>Spis lekcji</h1>
-      <p>
+      <h1 className={styles.heading}>Spis lekcji</h1>
+      <p className={styles.headingDesc}>
         Wybierz sobie dowolny temat mini gry i ćwicz swoje umięjętoności
         przedsiębiorcze! (TODO: WERSJA Z LEKCJAMI)
       </p>

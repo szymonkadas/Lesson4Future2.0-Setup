@@ -1,0 +1,16 @@
+@import "../variables";
+
+@mixin buttonLink {
+  text-decoration: none;
+  color: $specialTextColor;
+
+  &:hover {
+    color: inherit;
+  }
+}
+
+@mixin darkHover {
+  &:hover {
+    background-color: $secondaryColor;
+  }
+}

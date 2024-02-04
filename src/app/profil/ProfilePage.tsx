@@ -1,4 +1,5 @@
 import React from "react";
+import Button from "../../components/Buttons/Button/Button";
 import styles from "./ProfilePage.module.scss";
 
 interface ProfileProps {
@@ -43,9 +44,11 @@ const ProfilePage: React.FC<ProfileProps> = ({
           <h2>Email</h2>
           <div className={styles.input}>{email}</div>
         </div>
-        <div className={styles.deleteButton} onClick={handleDeleteAccount}>
-          Usuń konto
-        </div>
+        <Button
+          textContent="Usuń konto"
+          initialStyle={styles.deleteButton}
+          action={handleDeleteAccount}
+        ></Button>
       </div>
     </div>
   );

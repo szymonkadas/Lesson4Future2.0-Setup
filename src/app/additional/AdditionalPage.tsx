@@ -5,7 +5,7 @@ export default function StartPage() {
   return (
     <div className={styles.pageWrapper}>
       <h1 className={styles.heading}>Dodatkowe Materiały</h1>
-      <p className={styles.p}>
+      <p className={styles.headingDesc}>
         Oto materiały dla Twojego rozwoju z tematów przedsiębiorczości
         całkowicie za darmo.
       </p>
